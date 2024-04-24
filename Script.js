@@ -20,14 +20,14 @@ function maxEarnings(x){
             if(x<=4){
                 return 0;   
             }
-            else if(x==5){
+            else if(x<7){
                 let remain = x-4;
                 pubCount++;
                 let earnings = remain*1000;
                 totalEarnings += earnings + maxProfit(remain);
                 return earnings;
             }
-            else if(x>5 && x<14){
+            else if(x>6 && x<15){
                 let remain = x-5;
                 theatreCount++;
                 let earnings = remain*1500;
@@ -63,7 +63,7 @@ function maxEarnings(x){
             if(x<=4){
                 return 0;
             }
-            else if(x==5){
+            else if(x<7){
                 let remain = x-4;
                 pubCount++;
                 let earnings = remain*1000;
